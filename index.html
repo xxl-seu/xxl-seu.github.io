@@ -1,40 +1,163 @@
-<!-- 头使用方法 -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <!-- 使用utf-8对编码进行定义 -->
-  <title>我的测试页面</title>
-  <!-- 注意区分title和h1，title是整个html文档的标题，h1是body的顶级标题 -->
-  <link rel="stylesheet" href="my-css-file.css" />
-  <!-- 使用link元素引用css文件 -->
+	<title>SDFE-LV</title>
+	<meta charset="utf-8" />
+	<style>
+        /* 样式设置 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            line-height: 2; /* 设置行高为正文字体大小的1.5倍，增加行间距 */
+        }
+        h1 {
+            text-align: center; /* 一级标题居中 */
+            font-weight: bolder; /* 一级标题加粗 */
+            font-size: 300%; /* 缩小字号 */
+        }
+        h2 {
+            text-align: left; /* 二级标题居中 */
+            font-weight: bold;
+            font-size: 250%; /* 缩小字号 */
+        }
+        h3 {
+        	text-align: left; /* 三级标题左对齐 */
+            font-weight: normal; /* 三级标题加粗 */
+            font-size: 200%; /* 缩小字号 */
+        }
+        h4 {
+        	text-align: left; /* 三级标题左对齐 */
+            font-weight: normal; /* 三级标题加粗 */
+        }
+        p {
+            text-align: left; /* 正文左对齐 */
+            font-size: 120%; /* 缩小字号 */
+        }
+        /* 添加样式 */
+        ul {
+            font-size: 120%; /* 缩小字号 */
+        }
+        ol {
+            font-size: 120%; /* 缩小有序列表的字号 */
+        }
+        /* 添加样式 */
+        .text-box {
+            background-color: #ffeeba; /* 淡黄色背景 */
+            padding: 10px; /* 内边距，控制文本与边框的距离 */
+            border: 1px solid #ffc107; /* 边框 */
+            border-radius: 5px; /* 边框圆角 */
+        }
+    </style>
 </head>
 
-<!-- 元素使用方法 -->
-<p>
-<a> </a> 元素创建一个超链接 <br>
-<em> </em>元素倾斜之后的字体 <br>
-<strong> </strong> 元素加粗之后的字体 <br>
-</p>
+<body>
 
-<!-- 超链接使用方法 -->
-<p>
-<a href="https://zh.wikipedia.org/zh-hans/神鵰俠侶" title="神雕侠侣">神雕侠侣</a> 
-</p>
+	<header>
+        <h1>SDFE-LV: An Unconstrained Database for Spotting Dynamic Facial Expressions in Long Videos</h1>
+    </header>
 
-<!-- 图片使用方法 -->
-<img src="https://roy-tian.github.io/learning-area/extras/tools/playable-code/images/sdxl.jfif" alt="《神雕侠侣》作品图片">
+    <img src="cover.png" alt="cover" style="max-width: 100%; height: auto;">
 
-<!-- 特殊字符使用方法 -->
-<p>
-“&lt;”用&+lt+;表示 <br>
-“&gt;”用&+gt+;表示<br>
-“&quot;”用&+quot+;表示<br>
-“&apos;”用&+apos+;表示<br>
-“&amp;”用&+amp+;表示<br>
-</p>
+    <h2> Overview </h2>
+    <p>
+    	<strong> SDFE-LV </strong> is a large-scale unconstrained facial expression database for spotting the onset and offset frames of a complete dynamic facial expression sample from long videos. 
+    	It has consists of <strong> 1,323 </strong> long videos collected from multiple media resources, e.g., <strong> interviews, reality shows, speeches, movies, documentaries, we-media short videos, and others. </strong>
+    	Based on the crowdsourcing annotations, each long video in SDFE-LV was independently labeled for <strong> five </strong> times. 
+    </p>
 
-<!-- 换行使用方法 -->
-<p>
-<在此处 <br> 换行>
-</p>
+    <h2> Samples </h2>
+    <img src="samples.png" alt="samples" style="max-width: 100%; height: auto;">
 
-<!-- 在html中使用css -->
+
+    <h2> Download </h2>
+    <h3> Term & Conditions </h3>
+    <ul>
+        <li> 
+        	SDFE-LV database is provided for <strong> academic, non-commercial, not-for-profit purposes </strong> only. 
+    	</li>
+        <li>
+        	All videos of the SDFE-LV database are obtained from the Internet, not the property of AIPL, Southeast University, China. The AIPL is <strong> not responsible </strong> for the content or the meaning of these videos.
+    	</li>
+        <li>
+        	<strong> Reproduction, copy, sell </strong> of any portion of the SDFE-LV for any <strong> commercial purposes </strong> are not permitted. 
+        </li>
+        <li>
+        	<strong> Redistribution, republishing, or dissemination </strong> of any portion of the SDFE-LV in any form, source or binary, are not permitted without prior written approval by the licensor. 
+        </li>
+        <li>
+        	The AIPL reserves the right to terminate your access to the DFEW database at any time.
+        </li>
+    </ul>
+    <h3> How to get the Password </h3>
+    <p>
+    	This database is publicly available. It is free for professors and researcher scientists affiliated to a University. 
+
+    	<br>
+    	<br>
+
+    	Permission to use but not reproduce or distribute the SDFE-LV database is granted to all researchers given that the following steps are properly followed:
+
+    	<ul>
+    		<li> 
+    			Download and sign the <a href="agreement.pdf" download="agreement.pdf"> User License Agreement </a> on SDFE-LV Database. 
+    		</li>
+    		<li> 
+    			Send an e-mail to <a href="mailto:xuxiaolin@seu.edu.cn" title="Xiaolin Xu">Xiaolin Xu</a> before downloading the database.
+    		</li>
+    		<li> 
+    			The verification will be conducted after we receive the application email for the database. The verification process will take no more than one week and we will endeavor to complete it as quickly as possible.
+    		</li>
+    		<li> 
+    			Upon successful verification, an email containing the database downloading link and password will be sent to you.
+    		</li>
+
+    	</ul>
+
+    	<p>
+    		Note:
+    	</p>
+    	<ol>
+	        <li>
+	        	Students are not eligible to be a recipient. If you are a student, please have your supervisor to make a request.
+	        </li>
+	        <li>
+	        	Your Email MUST be sent from a valid University account.
+	        </li>
+	        <li>
+	        	If this data is used, in whole or in part, for any publishable work, the following paper must be referenced.
+	        </li>
+    	</ol>
+    </p>
+
+    <h3> Content Preview </h3>
+    <ul>
+    		<li> 
+    			SDFE-LV
+    		</li>
+    </ul>
+    <img src="content.png" alt="content" style="max-width: 100%; height: auto;">
+
+    <p>
+    	For more details of the database, please refer to the paper <a href="https://arxiv.org/pdf/2209.08445.pdf" title="SDFE-LV: An Unconstrained Database for Spotting Dynamic Facial Expressions in Long Videos">"SDFE-LV: An Unconstrained Database for Spotting Dynamic Facial Expressions in Long Videos"</a>.
+    </p>
+
+    <h2> Citation </h2>
+    <div class="text-box">
+    	@article{xu2022sdfe, <br>
+  		title={SDFE-LV: A Large-Scale, Multi-Source, and Unconstrained Database for Spotting Dynamic Facial Expressions in Long Videos}, <br>
+  		author={Xu, Xiaolin and Zong, Yuan and Zheng, Wenming and Li, Yang and Tang, Chuangao and Jiang, Xingxun and Jiang, Haolin}, <br>
+  		journal={arXiv preprint arXiv:2209.08445}, <br>
+  		year={2022} <br>
+		}
+    </div>
+
+    <h2> Contact </h2>
+    <p>
+    	Please contact <a href="mailto:xuxiaolin@seu.edu.cn" title="Xiaolin Xu">Xiaolin Xu</a> for questions about the database.
+	</p>
+
+
+</body>
+
+</html>
